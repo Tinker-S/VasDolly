@@ -1,5 +1,5 @@
 apply plugin: 'groovy'
-apply from: rootProject.file("maven.gradle")
+apply plugin: 'maven'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -18,11 +18,11 @@ compileGroovy {
     options.encoding = "UTF-8"
 }
 
-//uploadArchives {
-//    repositories.mavenDeployer {
-//        repository(url: "file:///Users/leontli/localMaven")
-//        pom.groupId = "channel"
-//        pom.artifactId = "v2"
-//        pom.version = "2.0"
-//    }
-//}
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "file:///home/ts/localMaven")
+        pom.groupId = "channel"
+        pom.artifactId = "v2"
+        pom.version = "2.0"
+    }
+}

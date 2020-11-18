@@ -1,17 +1,16 @@
 apply plugin: 'com.android.application'
 apply plugin: 'channel'
 
-
 buildscript {
     repositories {
         maven {
-            url "file:///Users/litao/localMaven"
+            url "file:///home/ts/localMaven"
         }
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.leon.channel:plugin:2.0.3'
+        classpath 'channel:v2:2.0'
     }
 }
 
