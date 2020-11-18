@@ -4,13 +4,13 @@ apply plugin: 'channel'
 buildscript {
     repositories {
         maven {
-            url "file:///home/ts/localMaven"
+            url "${rootProject.projectDir}/localMaven"
         }
         google()
         jcenter()
     }
     dependencies {
-        classpath 'channel:v2:2.0'
+        classpath 'com.leon.channel:plugin:2.0.3'
     }
 }
 

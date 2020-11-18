@@ -21,8 +21,8 @@ compileGroovy {
 uploadArchives {
     repositories.mavenDeployer {
         repository(url: "file:///home/ts/localMaven")
-        pom.groupId = "channel"
-        pom.artifactId = "v2"
-        pom.version = "2.0"
+        pom.groupId = "com.leon.channel"
+        pom.artifactId = "plugin"
+        pom.version = "2.0.3"
     }
 }
